@@ -327,3 +327,14 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* BMI Calculator start */
+.bmi-grid-1 {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  /* border: 1px solid gray; */
+}
+.bmi-grid-1 > .item {
+  border: 1px solid gray;
+}
+/* BMI Calculator end */
