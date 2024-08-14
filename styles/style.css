@@ -4,17 +4,14 @@
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
-  /* background-color: rgb(0, 0, 0); */
 }
 .font-dancing {
   font-family: "Dancing Script", cursive;
 }
 
 /* Navbar Section */
-
 header {
   background-image: linear-gradient(black, rgb(32, 31, 31), black);
-  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   height: 692px;
@@ -25,7 +22,7 @@ nav {
   align-items: center;
   margin: 0 auto;
   padding-top: 2rem;
-  width: 90%;
+  width: 80%;
   color: white;
 }
 .nav-links {
@@ -39,9 +36,12 @@ nav {
   border-radius: 10rem;
   padding: 0.5rem;
 }
+.ham-burger {
+  display: none;
+}
 .logo {
   color: #e6533c;
-  font-size: 26px;
+  font-size: 2rem;
   font-weight: 800;
 }
 .home {
@@ -56,17 +56,18 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 80%;
   margin: 2rem auto;
   /* border: 10px red solid; */
 }
 .banner-text {
   height: 450px;
+  /* border: 1px red solid; */
 }
 .banner-text h2 {
   color: rgb(255, 255, 255);
   padding-top: 50px;
-  font-size: 58px;
+  font-size: 3.6rem;
   line-height: 120%;
   font-weight: 900;
   width: 60%;
@@ -76,7 +77,7 @@ nav {
   color: rgba(255, 255, 255, 0.5);
   font-family: Inter;
   padding: 30px 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   width: 60%;
 }
@@ -88,7 +89,7 @@ nav {
   width: 350px;
   height: 500px;
   padding-top: 8rem;
-  /* border: 1px rgb(214, 135, 135) solid; */
+  margin: 0 auto;
 }
 
 .popup-one {
@@ -135,7 +136,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: px;
   margin-left: 180px;
 }
 .popup-two h4 {
@@ -164,30 +164,27 @@ nav {
   text-decoration: none;
   display: inline-block;
 }
-/* Change Your Habbits Section */
+/* Change Your Habits Section */
 
-.change-your-habit-container {
+.habit-bg {
   background-color: #000000;
-  /* width: 90%; */
 }
 .habit-container {
-  width: 90%;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
 }
-.habit-content {
-  justify-content: center;
+.habit-title {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 30px;
   line-height: 20px;
-  /* border: 1px solid #e6533c; */
 }
-.habit-content h3 {
+.habit-title h3 {
   color: rgb(255, 255, 255);
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
 }
-.habit-content p {
+.habit-title p {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 30px;
   font-size: 14px;
@@ -216,18 +213,16 @@ nav {
   font-weight: 400;
   margin-bottom: 50px;
 }
-
 .squad-item {
   transition: transform 0.5s;
 }
 .squad-item:hover {
   transform: translateY(-20px);
 }
-
 /* Change your habit section end */
 
 /* Run an extra mile easily start*/
-.extra-mile-section {
+.run-bg {
   background-color: #000000;
 }
 .extra-mile-container {
@@ -237,22 +232,23 @@ nav {
   border-radius: 18px;
   background: rgb(34, 34, 34);
   padding: 20px;
-  width: 87%;
+  width: 77%;
   margin: auto;
 }
 .run-title h3 {
   color: rgb(255, 255, 255);
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
   line-height: 120%;
   width: 400px;
 }
 .run-title {
-  margin-left: 40px;
+  /* margin-left: 40px; */
+  padding: 10px;
 }
 .run-title p {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.3px;
@@ -261,7 +257,7 @@ nav {
 .run-btn {
   border-radius: 42px;
   background: rgb(230, 83, 60);
-  padding: 10px 40px;
+  padding: 10px 50px;
   margin-top: 10px;
 }
 .extra-div-two img {
@@ -276,7 +272,7 @@ nav {
   background-color: #000000;
 }
 .width {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 .training-title h3 {
@@ -298,7 +294,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   /* border: 1px solid green; */
-  height: 500px;
+  /* height: 250px; */
   /* padding: 10px; */
   box-sizing: border-box;
 }
@@ -311,6 +307,7 @@ nav {
       rgba(6, 255, 210, 0.5)
     ),
     url("../images/exercise1.jpg");
+  height: 200px;
   /* background-size: contain; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,6 +333,7 @@ nav {
   grid-column: 1 / span 5;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/exercise4.png");
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -375,7 +373,7 @@ nav {
 }
 .bmi-title h3 {
   color: rgb(255, 255, 255);
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
 }
 .bmi-title p {
@@ -600,5 +598,102 @@ nav {
   font-weight: 400;
   line-height: 30px;
 }
-
 /* Footer Section End */
+
+@media screen and (max-width: 576px) {
+  header {
+    height: 1200px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .ham-burger {
+    display: block;
+  }
+  .banner-Container {
+    flex-direction: column;
+  }
+  .banner-text {
+    height: 500px;
+    /* border: 1px red solid; */
+  }
+  .banner-text h2 {
+    width: 90%;
+    font-size: 2.8rem;
+  }
+  .banner-text p {
+    width: 80%;
+  }
+  .popup-one {
+    margin-left: -80px;
+  }
+  .popup-two {
+    margin-left: 160px;
+  }
+  .habit-title h3 {
+    font-size: 2rem;
+  }
+  .squad-circle {
+    flex-direction: column;
+  }
+  .extra-mile-container {
+    flex-direction: column;
+  }
+  .run-title h3 {
+    font-size: 2rem;
+    width: 200px;
+  }
+  .run-title {
+    padding: 10px;
+  }
+  .run-title p {
+    width: 300px;
+    padding: 7px 0;
+  }
+  .run-btn {
+    width: 100%;
+  }
+  .grid-canvas {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0;
+  }
+  .item1 {
+    grid-column: 1 / span 1;
+    height: 140px;
+  }
+  .item2 {
+    grid-column: 2 / span 1;
+    height: 140px;
+  }
+  .item3 {
+    grid-column: 1 / span 1;
+    height: 140px;
+  }
+  .item4 {
+    grid-column: 2 / span 1;
+    height: 140px;
+  }
+  .item5 {
+    grid-column: 1 / span 1;
+    height: 140px;
+  }
+  .item6 {
+    grid-column: 2 / span 1;
+    height: 140px;
+  }
+  .bmi-bg {
+    height: 790px;
+  }
+  .bmi-flex {
+    flex-direction: column;
+    height: 600px;
+    padding: 20px 40px;
+    /* border: 1px red solid; */
+  }
+  .bmi-title {
+    width: 80%;
+  }
+  .bmi-title h3 {
+    font-size: 2rem;
+  }
+}
